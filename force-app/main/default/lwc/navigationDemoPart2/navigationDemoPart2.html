@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="LWC Navigation ListView">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Contact List View" variant="brand" onclick={NavigateContactListview}></lightning-button>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="LWC Navigation Files">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Files" variant="brand" onclick={NavigateFiles}></lightning-button>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="LWC Navigation Contact Record View">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Contact View" title="view" variant="brand" onclick={NavigateContactView}></lightning-button>
+            <lightning-button label="Contact Edit" title="edit" variant="brand" onclick={NavigateContactView}></lightning-button>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="LWC Navigation To Tab">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Navigate to LWC Fundamentals" title="view" variant="brand" onclick={NavigateToTab}></lightning-button>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="LWC Navigation To Object RelatedList">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Contact Related Account" title="view" variant="brand" onclick={NavigateToAccountRelated}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="LWC Navigation WebPage">
+        <div class="slds-p-around_medium">
+            <lightning-button label="WebPage (google)" variant="brand" onclick={NavigateWebPage}></lightning-button>
+        </div>
+    </lightning-card>
+
+    <!-- it will redirst you to the lwc component -->
+    <lightning-card title="LWC Navigation LWC Page">
+        <div class="slds-p-around_medium">
+            <lightning-button label="LWC Page" variant="brand" onclick={NavigateLwcPage}></lightning-button>
+        </div>
+    </lightning-card>
+
+    <!-- it will call apex page from  lwc component -->
+    <lightning-card title="LWC Navigation Apex Page">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Apex Page" variant="brand" onclick={NavigateApexPage}></lightning-button>
+        </div>
+    </lightning-card>
+
+     <!-- it will ued to get the page reference -->
+    <lightning-card title="LWC Get Page Reference">
+        <div class="slds-p-around_medium">
+            <strong>{pageReference}</strong>
+        </div>
+    </lightning-card>
+</template>

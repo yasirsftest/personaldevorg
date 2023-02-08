@@ -1,0 +1,19 @@
+<template>
+
+   
+
+    <c-child-component-demo
+        messagefromparent="This is calling of child from parent"
+        details={DetailsToShow}
+        progressvalue = {updateprogressvalue}
+    ></c-child-component-demo>
+
+    <lightning-card >
+        <div class="slds-m-around_x-small">
+            <lightning-input type="text" label="Enter Percentage" onkeyup={changeHandler} ></lightning-input>
+        </div>
+    </lightning-card>
+
+    <button class="slds-button slds-button_brand" onclick={Resetit}>Reset Slider</button>
+
+</template>

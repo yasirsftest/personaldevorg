@@ -1,0 +1,20 @@
+<template>
+    <lightning-card>
+        <h3 slot="Sample App">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            Bicycle Details
+        </h3>
+        <div slot="footer">
+            <div id="waiting" if:false={ready}>Loading…</div>
+            <div id="display" if:true={ready}>
+                <div>Name: {name}</div>
+                <div>Description: {description}</div>
+                <div>Category: {category}</div>
+                <div>Material: {material}</div>
+                <div>Price: {price}</div>
+                <div><img src={pictureUrl}/></div>
+            </div>
+        </div>
+        <p class="slds-p-horizontal_small">Card Body (custom component)</p>
+    </lightning-card>
+</template>

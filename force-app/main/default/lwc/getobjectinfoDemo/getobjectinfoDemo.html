@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="getObjectInfoApi Demo">
+        <div class="slds-p-around_medium">
+            <template if:true={MetaDetails}>
+                <strong>{MetaDetails.apiName}</strong>
+            </template>
+        </div>
+    </lightning-card>
+
+
+    <lightning-card title="getObjectInfoApis Demo">
+        <div class="slds-p-around_medium">
+            <template if:true={objectDetailsArr}>
+                <template for:each={objectDetailsArr.results} for:item="item">
+                    <div key={item.result.apiName}>
+                        <Strong>Object Api Name : {item.result.apiName}</Strong> <br />
+                    </div>
+                    
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

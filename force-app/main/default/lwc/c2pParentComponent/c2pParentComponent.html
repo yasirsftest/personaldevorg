@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Child To Parent Communication">
+        <div class="slds-m-around_x-small">
+            <button class="slds-button slds-button_brand" onclick={handleClick}>Modal Popup</button>
+            <template if:true={isModelVisible}>
+                <c-c2p-model-component onclose={modalclosehandler}></c-c2p-model-component>
+            </template>
+            {Msg}
+        </div>
+    </lightning-card>
+</template>

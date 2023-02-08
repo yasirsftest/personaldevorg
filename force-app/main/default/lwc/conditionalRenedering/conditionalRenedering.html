@@ -1,0 +1,46 @@
+<template>
+    <lightning-card variant="Narrow"  title="Conditional Rendering" icon-name="standard:account">
+        <div class="slds-m-around_x-small">
+         <!-- Brand variant: Identifies the primary action in a group of buttons -->
+        <lightning-button variant={ButtonVariant} 
+                        label={ButtonLabel} 
+                        title={ButtonLabel} 
+                        onclick={handleClick} 
+                        class="slds-m-left_x-small">
+        </lightning-button>
+        
+        <template if:true={isVisible}>
+            <h1>Message is Now Visible</h1>
+        </template>
+
+        </div>
+    </lightning-card>    
+
+
+    <lightning-card variant="Narrow"  title="Looping" icon-name="standard:account">
+        <div class="slds-m-around_x-small">
+            <ul class="slds-list_dotted">
+                <template for:each={carList} for:item="cars" >
+                            <li key={cars}>{cars}</li> 
+                </template>
+            </ul>
+        </div>
+    </lightning-card>  
+
+     <lightning-card variant="Narrow"  title="Looping iteration" icon-name="standard:account">
+        <div class="slds-m-around_x-small">
+            <template  iterator:rec={users}>
+               <div key={rec.value.Id}> 
+                    <div  if:true={rec.first} class="list-first">
+                        Here the loop get started
+                    </div>
+                        {rec.value.name} 
+                    <div if:true={rec.last} class="list-last">
+                        Here the loop get Ended
+                    </div>
+               </div>
+            </template>
+        </div>
+    </lightning-card>  
+
+</template>

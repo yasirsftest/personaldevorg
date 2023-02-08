@@ -1,0 +1,29 @@
+<template>
+    <lightning-card variant="Narrow"  title="Two Way Bindings" icon-name="standard:account">
+        <div class="slds-m-around_x-small">
+            <h1>Account Gene Hotels</h1>
+            <br />
+            <lightning-input type="text"  onkeyup={changeHandler} label="Enter some text"></lightning-input>
+            <h1>{title} {cource} </h1>
+        </div>
+    </lightning-card>
+
+    <lightning-card variant="Narrow"  title="Track Decoraters" icon-name="standard:account">
+        <div class="slds-m-around_x-small">
+            <br />
+            <lightning-input type="text"  onkeyup={trackHandler} label="Enter some text"></lightning-input>
+            <h1>my city is : {address.city}</h1>
+        </div>
+    </lightning-card>
+
+    <lightning-card variant="Narrow"  title="Getter Demo" icon-name="standard:account">
+        <div class="slds-m-around_x-small">
+            <br />
+            <h1>{FirstElementfromArray}</h1>
+            <h1>{multiplenum1num2}</h1>
+            <h1 if:true={recordName}>{recordName}</h1>
+            <h1 >{c__param}</h1>
+        </div>
+    </lightning-card>
+
+</template>

@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Update Contact Demo">
+        <div class="slds-p-around_medium">
+            <template if:true={contacts}>
+                <lightning-datatable style="height: 300px;"
+                        key-field="id"
+                        data={contacts}
+                        columns={cols}
+                        
+                        hide-checkbox-column>
+                </lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Update Contact Demo">
+        <div class="slds-p-around_medium">
+            <template if:true={contacts}>
+                <ul class="slds-list_dotted">
+                    <template for:each={contacts} for:item="item">
+                        <div key={item.Name}></div>
+                        <li key={item.URL}><a href={item.URL} target="_blank" >{item.Name}</a>  </li>
+                    </template>
+                </ul>
+            </template>
+        </div>
+    </lightning-card>
+
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="create COntact Demo">
+        <div class="slds-p-around_medium">
+            <form class="createForm">
+                <lightning-input label="First Name" name="FirstName" onchange={changeHandler}></lightning-input> 
+                <lightning-input label="Last Name" name="LastName" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Title" name="Title" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Tel" name="Phone" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Email" name="Email" onchange={changeHandler}></lightning-input>
+
+                <lightning-button variant="brand" label="Save" onclick={createContact}></lightning-button>
+            </form>
+        </div>
+    </lightning-card>
+</template>

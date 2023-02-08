@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="LWC Navigation HOME Demo">
+        <div class="slds-p-around_medium">
+            <lightning-button variant="brand" label="Navigate To Home" onclick={NavigateToHome} ></lightning-button>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="LWC Navigation CHATTER Demo">
+        <div class="slds-p-around_medium">
+            <lightning-button variant="brand" label="Navigate To Chatter" onclick={NavigateTochatter} ></lightning-button>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="LWC Navigation New Contact Demo">
+        <div class="slds-p-around_medium">
+            <lightning-button variant="brand" title="Contact" label="New Contact" onclick={NavigateToCreate} ></lightning-button>
+            <lightning-button variant="brand" title="Account" label="New Account" onclick={NavigateToCreate} ></lightning-button>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Navigation New Contact With Default Values">
+        <div class="slds-p-around_medium">
+            <lightning-button variant="brand" title="Contact" label="Contact with Values" onclick={NavigateToCreateContactWithValues} >
+
+            </lightning-button>
+        </div>
+    </lightning-card>
+
+</template>

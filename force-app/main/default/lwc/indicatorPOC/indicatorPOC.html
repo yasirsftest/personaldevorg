@@ -1,0 +1,47 @@
+<template>
+    <lightning-card title="Edit Record using lightning record edit form">
+        <div class="slds-p-around_medium">
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-progress-indicator >
+                    <a href="#" target="_blank">
+                        <lightning-progress-step
+                            label="Step One"
+                            value="step1"
+                            data-id="0012w000017CyvoAAC"
+                            onclick={handleStepClick}
+                        ></lightning-progress-step>
+                    </a>    
+                    <lightning-progress-step
+                        label="Step Two"
+                        value="step2"
+                        onstepblur={handleStepBlur}
+                    >
+                    </lightning-progress-step>
+                    <lightning-progress-step
+                        label="Step Three"
+                        value="step3"
+                        onstepblur={handleStepBlur}
+                    >
+                    </lightning-progress-step>
+                </lightning-progress-indicator>
+            
+                
+                    <!-- <lightning-button-icon
+                        icon-name="utility:info"
+                        variant="bare"
+                        name="Yasir"
+                        
+                    ></lightning-button-icon> -->
+                    <a href={linktonav} target="_blank" param="LWC" onclick={NavigateToPF}>
+                        <lightning-icon icon-name="utility:info" alternative-text="Approved" title="LWC"></lightning-icon>
+                    </a>
+                    <!-- <lightning-button-icon
+                        icon-name="utility:info"
+                        variant="bare"
+                        onclick={handleStepClick}
+                        name="Faisal"
+                    ></lightning-button-icon> -->
+            </div>             
+        </div>
+    </lightning-card>
+</template>

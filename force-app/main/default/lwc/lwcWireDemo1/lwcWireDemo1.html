@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="LWC Wire Demo">
+        <div class="slds-p-around_medium">
+            <template if:true={ContactContainer} >
+                <template for:each={ContactContainer} for:item="item">
+                    <div key={item.id} class="slds-box slds-box_xx_small">
+                        <strong>{item.Name}</strong> <br />
+                        <strong>{item.Title}</strong> <br />
+                        <strong>{item.Email}</strong><br />
+                        <strong>{item.Phone}</strong><br />
+                    </div>
+                </template>
+
+            </template>
+        </div>
+    </lightning-card>
+</template>

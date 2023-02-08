@@ -1,0 +1,54 @@
+<template>
+   <lightning-card title="Communication from Parent To Child">
+        <div class="slds-notify slds-notify_alert slds-alert_error" role="alert">
+            {messagefromparent}
+        </div>
+   </lightning-card>
+    
+    <lightning-card title="Communication from Parent To Child Non Primitive">
+        <div class="slds-m-around_x-small">
+
+            <div class="slds-size_3-of-4">
+                <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Basic Carousel
+                    <lightning-carousel>
+                        
+                        <template for:each={details} for:item="item">
+                                <lightning-carousel-image
+                                    key={item.src}
+                                    src = {item.src}
+                                    header = {item.header}
+                                    description = {item.description}
+                                    alternativetext = {item.alternativetext}>
+                                </lightning-carousel-image>
+                        </template>
+
+                        
+                    </lightning-carousel>
+            </div>
+
+        </div>
+            
+        </div>
+    </lightning-card>
+
+
+    
+
+
+    <lightning-card title="Calling a Child Event From Parent - Slider">
+        <div class="slds-m-around_x-small">
+            <lightning-slider label="Volume" value={val}></lightning-slider>               
+        </div>
+    </lightning-card>
+
+
+<lightning-card title="Communication from Parent To Child Non Primitive">
+        <div class="slds-m-around_x-small">
+            <lightning-progress-bar value={progressvalue} size="large"></lightning-progress-bar>                
+        </div>
+    </lightning-card>
+
+   
+
+    
+</template>

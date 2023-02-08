@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="getRecord Demo">
+        <div class="slds-p-around_medium">
+            <template for:each={formFields} for:item="item">
+                <div key={item.fieldName}>
+                    <p><Strong>{item.label}</Strong> {item.value}</p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

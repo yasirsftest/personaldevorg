@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="GetpicklistvalueByRecordType Demo">
+        <div class="slds-p-around_medium">
+            
+            <lightning-combobox
+                    name="AccountSource"
+                    label="Account Source"
+                    value={selectedAccountSource}
+                    placeholder="Select Account Source"
+                    options={AccountSourceOptions}
+                    onchange={handleChange} ></lightning-combobox>
+        
+                    <p>Selected value is: {selectedAccountSource}</p>
+                 <br />
+
+                <lightning-combobox
+                    name="CleanStatus"
+                    label="Clean Status"
+                    value={selectedCleanStatus}
+                    placeholder="Select Account Source"
+                    options={CleanStatusOptions}
+                    onchange={handleChange} ></lightning-combobox>
+        
+                    <p>Selected value is: {selectedCleanStatus}</p>
+                 <br />
+        </div>
+    </lightning-card>
+</template>
